@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+        h1{
+    text-align: center;
+
+}
+body {
+    background-color: #081D45;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #023047;
+    
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    
+
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px
+}
+
+.areaLogin img {
+    width: 420px;
+}
+
+.formLogin h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
+}
+
+.formLogin p {
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.formLogin input {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+
+.formLogin input:focus {
+    border: 1px solid #C0C0C0;
+}
+
+.formLogin label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formLogin a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #555;
+    transition: all linear 160ms;
+}
+
+.formLogin a:hover {
+    color: #f72585;
+}
+
+.btn {
+    background-color: #081D45;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
+
+}
+
+    </style>
+    <div class="page" >
+      
+        <form action ="" method='post' class="">
+            <br><br>
+            <label for="email">Nome</label>
+            <input type="text" placeholder="Digite seu login" />
+            <label for="text">email</label>
+            <input type="text" placeholder="Digite seu email">
+            <label for="text">data nascimento</label>
+            <input type="date">
+            <label for="text">visita oa site</label>
+            <input type="datetime-local">
+            <label for="text">senha</label>
+            <input type="password" placeholder="Digite sua Senha">
+            <label for="text">contato</label>
+            <input type="radio" name="contato" id="sim">Sim
+            <input type="radio" name="contato" id="sim">Nao
+            <label for="text">Assunto
+            <input type="checkbox" name="auto" id="auto">Automovel
+            <input type="checkbox" name="Negocios" id="Negocios">Negocios
+            <input type="checkbox" name="Finanças" id="Finanças">Finanças
+            <input type="checkbox" name="Tecnologia" id="Tecnologia">Tecnologia
+            <input type="checkbox" name="Esporte" id="Esporte">Esporte
+            <label for="text">Local</label>
+            <select name="local" id="local" size="1">
+                <option value="">selecione</option>
+                    <option value="Vitoria">Vitoria</option>
+                    <option value="Vitoria">Serra</option>
+                    <option value="Vitoria">Vila Velha</option>
+                    <option value="Vitoria">Cariacica</option>
+            </select>
+            <span>comentario</span>
+            <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea>
+            <br>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Acessar" class="btn" />
+        </form>
+    </div>
+    
+</body>
+</html>
